@@ -33,25 +33,19 @@ O prueba con `curl`:
 curl http://localhost:8000
 ```
 
+## Bajar desde docker hub
+```bash
+docker pull jailervega/fastapi-docker:v1
+
+```
+
+## Correr el contenedor 
+```bash
+docker run -d -p 8000:8000 jailervega/fastapi-docker:v1
+```
 Deberías obtener la respuesta JSON:
 ```json
 {"message": "Hello World"}
-```
-
-### Publicación en Docker Hub
-
-### Iniciar sesión en Docker Hub
-```bash
-docker login -u jailervega
-```
-
-### Etiquetar la Imagen
-```bash
-docker tag fastapi-docker jailervega/fastapi-docker:v1
-```
-
-### Subir la Imagen a Docker Hub
-docker push jailervega/fastapi-docker:v1
 ```
 
 ## Comandos Útiles
